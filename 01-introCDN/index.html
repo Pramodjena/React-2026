@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Via CDN</title>
+  </head>
+  <body>
+    <!-- <h1>React Via CDN</h1> -->
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      function handleClick() {
+        alert("✅ Button clicked!");
+      }
+
+      root.render(
+        React.createElement(
+          "div",
+          null,
+          React.createElement("h1", null, "Dashboard 🚀"),
+          React.createElement("p", null, "This is rendered via React CDN"),
+          React.createElement(
+            "button",
+            { onClick: handleClick },
+            "Get Started",
+          ),
+        ),
+      );
+    </script>
+  </body>
+</html>
