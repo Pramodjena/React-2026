@@ -11,7 +11,8 @@
 
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script>
+
+    <!-- <script>
       const root = ReactDOM.createRoot(document.getElementById("root"));
 
       function handleClick() {
@@ -29,6 +30,25 @@
             { onClick: handleClick },
             "Get Started",
           ),
+        ),
+      );
+    </script> -->
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      // Define handleClick function
+      function handleClick() {
+        alert("You clicked React");
+        console.log("Yes you're in");
+      }
+
+      root.render(
+        React.createElement(
+          "div",
+          null,
+          React.createElement("h1", null, "Learning React"),
+          React.createElement("p", null, "Let's get started!!!"),
+          React.createElement("button", { onClick: handleClick }, "Click"),
         ),
       );
     </script>
