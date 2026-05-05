@@ -2,11 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>React Minimal</title>
+    <title>React | 2026</title>
+    <script type="module" src="./main.js" defer></script>
   </head>
   <body>
-    <div id="root"></div>
-
-    <script type="module" src="./main.js"></script>
+    <div id="root">
+      <h1>Testing React Library</h1>
+      <!-- <button onclick="getOutput()">Get the output</button> -->
+      <button id="btn">Get the output</button>
+    </div>
   </body>
 </html>
+
+<!-- Why it doesn't work: Modules have their own scope. They don't pollute the global window object. This is by design to prevent conflicts and keep code modular. -->
+
+<!-- solution : window.getOutput = getOutput; -->

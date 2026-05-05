@@ -1,9 +1,12 @@
 import React from "react";
+import Card from "./components/card/Card";
 
 const App = () => {
   return (
     <div>
-      <h1>Hello React !!!</h1>
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 };
