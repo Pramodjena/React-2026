@@ -1,11 +1,19 @@
 import React from "react";
 import "./App.css";
+import Card from "./components/Card.jsx";
 
 const App = () => {
   return (
-    <div className="container">
-      <h1>Hello React Bruhh !!!</h1>
-    </div>
+    <>
+      <h1>React Components</h1>
+      <div className="container">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </>
   );
 };
 

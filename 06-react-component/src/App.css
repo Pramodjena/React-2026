@@ -4,11 +4,43 @@
   box-sizing: border-box;
 }
 
+h1{
+  text-align: center;
+}
+
 .container{
   border: 2px solid;
-  width: 450px;
-  background: cyan;
   margin: 0 auto;
   margin-top: 100px;
   text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 } 
+
+.card-container{
+    border: 2px solid;
+    background: rgb(159, 173, 173);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-container img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.card-container button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background: red;
+  color: white;
+  font-weight: bold;
+}
