@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conatainer {
+  display: flex;
+  flex-wrap: wrap ; 
+  
+}
+
+h1{
+  text-align: center;
+}
+
+.card{
+  border: 2px solid;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:  #212121;
+  color: #fff;
+  padding: 20px;
+}
+
+.card img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.card button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
