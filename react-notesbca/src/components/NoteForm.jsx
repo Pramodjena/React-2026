@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NoteForm = () => {
+const NoteForm = ({addNote}) => {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
 
@@ -12,12 +12,10 @@ const NoteForm = () => {
     setDesc(e.target.value);
   }
 
-  const handleClick = () => {
-    alert(`The values are: ${title}, ${desc}`);
-  };
+ 
 
   return (
-    <div>
+    <div className="form-container">
       <input
         value={title}
         onChange={handleTitle}
@@ -32,7 +30,15 @@ const NoteForm = () => {
         placeholder="Enter description"
       ></textarea>
 
-      <button onClick={handleClick}>Add Note</button>
+      <button
+        onClick={() => {
+          addNote(title, desc); // function call
+          setTitle("");
+          setDesc("");
+        }}
+      >
+        Add Note
+      </button>
     </div>
   );
 };
